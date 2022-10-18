@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Comic Neue", cursive;
+  background: white;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  height: 100% vh;
+}
+
+a {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px rgb(198, 252, 237);
+  font-weight: bold;
+}
+
+header {
+  background: rgba(212, 42, 42, 0);
+  background-size: 100%, cover;
+  width: 100%;
+  height: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  background: rgb(0, 0, 0);
+  padding: 5px 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+header nav figure img.peque {
+  width: 60px;
+  height: 60px;
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header section {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  padding: 50px 20px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+header section blockquote {
+  color: white;
+  text-shadow: 1px 2px 3px white, 1px 2px 3px white, 1px 2px 3px white;
+  font-size: 1.9em;
+  text-align: center;
+  padding-left: 20px;
+}
+header section blockquote h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+header section blockquote p {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-shadow: 1px 2px 3px white;
+  justify-content: left;
+  padding: 10px;
+}
+header section form {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+header section form input, header section form button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+header section form input {
+  padding: 10px;
+  width: 100%;
+  display: block;
+}
+header section form button {
+  padding: 100%;
+  font-size: 1em;
+  background: rgb(198, 252, 237);
+  padding: 10px;
+  border: none;
+  color: black;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+header section form a {
+  display: block;
+  text-align: center;
+}
+
+main section div.Contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2px;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  background: rgba(58, 58, 58, 0.3);
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+main section div.Contenedor h2 {
+  padding: 20px;
+  font-size: 1.3em;
+}
+main section div.Contenedor p {
+  padding: 3px 21px;
+  font-size: 1.3em;
+}
+main section div.Contenedor ul {
+  display: inline-flex;
+  align-items: center;
+}
+main section div.Contenedor ul {
+  display: inline-flex;
+  align-items: center;
+}
+main section div.Contenedor ul li {
+  justify-content: center;
+}
+main section div.Contenedor ul li img {
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  width: 120px;
+  height: 120px;
+}
+main section div.padre {
+  background: rgba(58, 58, 58, 0.2);
+  padding: 18px 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 60px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section div.padre figure div h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  margin-bottom: 100px;
+  transition: all 500ms ease-out;
+  text-align: center;
+  margin-top: auto;
+}
+main section div.padre figure div p {
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 130px;
+  margin: auto;
+}
+main section div.padre figure {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px #703f3f;
+  cursor: pointer;
+}
+main section div.padre figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+main section div.padre figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 103, 123, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+main section div.padre figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+main section div.padre figure:hover > .capa h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+main section div.info {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  background: rgba(58, 58, 58, 0.3);
+  text-align: center;
+  color: black;
+}
+main section div.info h2 {
+  padding: 20px;
+  font-size: 1.6em;
+}
+main section div.info ul {
+  display: inline-flex;
+  align-items: center;
+}
+main section div.info ul div h2 {
+  padding: 20px;
+  font-size: 1.6em;
+  text-align: justify;
+}
+main section div.info ul div p {
+  padding: 20px;
+  font-size: 1.6em;
+  text-align: justify;
+}
+main section div.info ul li {
+  margin-right: 10px;
+}
+main section div.info ul li img {
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  width: 120px;
+  height: 120px;
+}
+main section div.ultima {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  background: rgba(58, 58, 58, 0.3);
+  text-align: justify;
+}
+main section div.ultima ul {
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: justify;
+}
+main section div.ultima ul h2 {
+  padding: 20px;
+  font-size: 1.6em;
+  text-align: justify;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  color: white;
+  text-align: justify;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.99);
+}
+footer div.pie {
+  margin: 20px;
+}
+footer div.pie ul {
+  margin: 20px;
+}
+footer div.pie ul li {
+  margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    grid-template-columns: 49px 1fr;
+  }
+  header section {
+    grid-template-columns: 1fr;
+  }
+  header section blockquote {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  main #segunda {
+    display: none;
+  }
+  main section div.cancelar {
+    display: none;
+  }
+  main section div.padre figure.edit {
+    display: none;
+  }
+  main section div.info ul div h2 {
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  footer section.pie {
+    display: inline-block;
+  }
+  footer section.pie h2 {
+    font-size: 1.3em;
+    padding: 20px;
+    text-align: justify;
+  }
+  footer section.pie h2 ul {
+    display: inline-flex;
+    text-align: right;
+  }
+  footer section.pie h2 ul li {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=style.css.map */
